@@ -1,8 +1,7 @@
 fn main() {
-    let mut x = 5;
-    let y = &mut x;
+    let y: &i32;
+    let x = 5;
+    y = &x;
 
-    *y += 1;
-
-    print!("x = {}", x);
+    print!("y = {}", y);
 }
